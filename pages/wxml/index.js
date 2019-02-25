@@ -7,7 +7,17 @@ Page({
   data: {
     time: (new Date()).toString(),
     w: 'w',
-    W: 'W'
+    W: 'W',
+    a: 1,
+    b: 2,
+    c: 3,
+    name: 'world',
+    length: 6,
+    array: [{
+      message: 'foo'
+    },{
+      message: 'bar'
+    }]
   },
 
   /**

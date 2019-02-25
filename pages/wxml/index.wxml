@@ -9,7 +9,7 @@
   <text>hello world</text>
 </view>
 
-<image class='userinfo-avatar'src="/images/a.png"></image>
+<image class='userinfo-avatar' src="/images/a.png"></image>
 
 <!--数据绑定-->
 <text>当前时间：{{time}}</text>
@@ -22,3 +22,33 @@
 <!--三元运算-->
 <!-- 根据a的值是否等于10 在页面输出不同的内容-->
 <text>{{ a === 10? "变量a 等于10": "变量a不等于10"}}</text>
+
+<!--算数运算-->
+<view>{{a + b}} + {{c}} + d</view>
+
+<!--字符串拼接-->
+<view>{{"hello " + name}}</view>
+
+<!--常量-->
+<text>{{[1,2,3]}}</text>
+<text>{{"hello 123"}}</text>
+
+<!-- 条件逻辑-->
+<view wx:if="{{length > 5}}">1</view>
+<view wx:elif="{{length > 2}}">2</view>
+<view wx:else>3</view>
+
+<!--列表渲染-->
+<!--array是一个数组-->
+<view wx:key="{{index}}" wx:for="{{array}}">
+  {{index}}: {{item.message}}
+</view>
+
+<view wx:key="{{index}}" wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName">
+  {{idx}}: {{itemName.message}}
+</view>
+
+<block wx:key="{{index}}" wx:for="{{[1,2,3]}}">
+  <view>{{index}}:</view>
+  <view>{{item}}</view>
+</block>
