@@ -1,0 +1,20 @@
+<!--pages/wxml/index.wxml-->
+<text>pages/wxml/index.wxml</text>
+
+<!--一个简单的文本标签-->
+<text>hello world</text>
+
+<!-- view 中包含了 text标签-->
+<view>
+  <text>hello world</text>
+</view>
+
+<image class='userinfo-avatar'src="/images/a.png"></image>
+
+<!--数据绑定-->
+<text>当前时间：{{time}}</text>
+
+<text data-test="{{test}}">hello world</text>
+
+<view>{{w}}</view>
+<view>{{W}}</view>
