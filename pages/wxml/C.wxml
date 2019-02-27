@@ -1,0 +1,5 @@
+<import src="B.wxml"></import>
+
+<!--<template is="A">&lt;!&ndash;会报错，没导入A模板&ndash;&gt;</template>-->
+
+<template is="B"></template>
