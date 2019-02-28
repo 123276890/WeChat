@@ -1,5 +1,7 @@
 {
   "pages":[
+    "pages/environment/page",
+    "pages/environment/index",
     "pages/JS/index",
     "pages/wxml/index",
     "pages/wxml/C",

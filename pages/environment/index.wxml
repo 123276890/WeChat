@@ -1,0 +1,6 @@
+<!--Page构造器的data参数-->
+<view>{{text}}</view>
+<view>{{array[0].msg}}</view>
+<button bindtap="ToIndexIndex">跳转</button>
+
+

@@ -1,0 +1,32 @@
+<view id="tapTest" data-hi="WeChat" bindtap="tapName">Click me!</view>
+<text>\n----------------\n</text>
+
+
+<view id="outer" catchtap="handleTap">
+    <view id="inner">点击我</view>
+</view>
+<text>\n\n</text>
+
+<!--交互反馈-->
+<button hover-class="hover" catchtap="sayHello">点击Button</button>
+<view hover-class="hover">点击View</view>
+
+<text>\n</text>
+
+<!--loading-->
+<button loading="{{loading}}" bindtap="tap">操作</button>
+
+<text>\n</text>
+
+<!--toast-->
+<button hover-class="hover" bindtap="pop">弹出toast</button>
+
+<text>\n</text>
+
+<!--模拟对话框-->
+<button hover-class="hover" bindtap="modal">模拟对话框</button>
+
+
+<!--请求接口-->
+<view wx:key="" wx:for="{{[1,2]}}" wx:for-item="item">{{item}}</view>
+<view wx:key="" wx:for="{{array}}" wx:for-item="item">{{item.goods_mobile_name}}</view>
