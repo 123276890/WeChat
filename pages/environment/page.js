@@ -11,6 +11,12 @@ Page({
       }
     })
   },
+  onShow(){
+    const ctx = wx.createCanvasContext('myCanvas')
+    ctx.setFillStyle('red')
+    ctx.fillRect(10, 10, 150, 75)
+    ctx.draw()
+  },
   tapName: function (event) {
     console.log(event)
   },
@@ -55,5 +61,5 @@ Page({
   },
   onReachBottom: function () {
     //上啦触底
-  }
+  },
 })

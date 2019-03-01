@@ -30,3 +30,8 @@
 <!--请求接口-->
 <view wx:key="" wx:for="{{[1,2]}}" wx:for-item="item">{{item}}</view>
 <view wx:key="" wx:for="{{array}}" wx:for-item="item">{{item.goods_mobile_name}}</view>
+
+<text>\n</text>
+
+<!--画布-->
+<canvas canvas-id="myCanvas"></canvas>
